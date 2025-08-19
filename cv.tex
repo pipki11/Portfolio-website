@@ -1,0 +1,165 @@
+\documentclass{muratcan_cv}
+
+% Define colors and icons
+\definecolor{linkedinblue}{HTML}{0077B5}
+\newcommand{\linkedinicon}{\faLinkedin}
+\newcommand{\githubicon}{\faGithub}
+\newcommand{\portfolioicon}{\faGlobe}
+
+% Setup header information
+\setname{Zaal Esartia}{}
+\setaddress{Tbilisi, Georgia}
+\setmobile{(+995) 599-00-00-00}
+\setmail{zaal.esartia@gmail.com}
+
+% Custom contact display command
+\newcommand{\contactinfo}{%
+    \begin{center}
+    {\color{linkedinblue}\LARGE\textbf{\@Zaal Esartia}}\\[1ex]
+    
+    {\small\faPhone} \ \@597798388 \ {\small\faEnvelope} \ \href{mailto:\@email}{\@esartiazaali@gmail.com}\\
+    \end{center}
+}
+
+% Social links with icons
+\newcommand{\sociallinks}{%
+    \href{https://www.linkedin.com/in/zaal-esartia-056bb32b2/}{\linkedinicon\hspace{0.5em}LinkedIn}
+    \hspace{1em} | \hspace{1em}
+    \href{https://github.com/pipki11}{\githubicon\hspace{0.5em}GitHub}
+    \hspace{1em} | \hspace{1em}
+    \href{https://zaalesartia.site}{\portfolioicon\hspace{0.5em}Portfolio}
+}
+
+\setthemecolor{MidnightBlue}
+
+% Custom spacing and centering commands
+\newcommand{\sectionspace}{\vspace{3ex}}
+\newcommand{\subsectionspace}{\vspace{2ex}}
+    
+\begin{document}
+
+% Display contact information
+\contactinfo
+\begin{center}
+\sociallinks
+\end{center}
+\vspace{2ex} % more white space after header
+
+\begin{center}
+\section*{Profile}
+\end{center}
+{\centering
+Computer Science student passionate about frontend development with hands-on experience building Angular applications. Skilled in C++, TypeScript, and modern web technologies. Looking for an internship/entry-level role to apply problem-solving and software development skills.\par}
+\sectionspace
+
+\section{Education} 
+    \datedexperience{BS Computer Science}{Sep 2022 - Aug 2026}
+    \explanation{
+Ivane Javakhishvili Tbilisi State University}{Tbilisi, Georgia} 
+    \datedexperience{High School Degree}{Sep 2010 - May 2022}
+    \explanation{
+Public School №35}{Tbilisi, Georgia}
+
+% -------------------Skills -----------------
+
+\section*{Skills}
+% Define skill level command
+\newcommand{\skill}[2]{%
+    \textbf{#1} & #2 \\[2ex]
+}
+
+\begin{center}
+\begin{tabular}{>{\color{linkedinblue}}l p{13cm}}
+    \skill{Frontend Development}{
+        \textbf{HTML5} • \textbf{CSS3} \hspace{1em} 
+        \textbf{JavaScript} • \textbf{TypeScript} \hspace{1em}
+        \textbf{Angular} \hspace{1em}
+        \textbf{RxJS}
+    }
+    \skill{UI/UX Technologies}{
+        \textbf{Sass} \hspace{1em}
+        \textbf{Bootstrap} \hspace{1em}
+        \textbf{Tailwind CSS}
+    }
+    \skill{Programming}{
+        \textbf{C++} \hspace{1em}
+        \textbf{System Architecture} \hspace{1em}
+        \textbf{CompTIA A+} 
+    }
+    \skill{Development Tools}{
+        \textbf{Git} \textbf{Version Control} \hspace{1em}
+        \textbf{VS Code} \hspace{1em}
+        \textbf{npm} \textbf{Package Manager}
+    }
+\end{tabular}
+\end{center}
+\sectionspace
+
+\section{Projects}
+    \datedexperience{\href{https://github.com/pipki11/ClipZ-Project}{ClipZ}}{December 2024}
+    \explanation{Video Sharing Platform for Gamers}{Tbilisi, Georgia}
+    \explanationdetail{
+    \smallskip
+    \coloredbullet\ %
+    Developed a video-sharing platform for gamers using Angular, enabling users to upload and share gameplay clips. Built a responsive UI with Tailwind CSS, optimized performance with Angular DevTools, and implemented reusable components, directives, and a modal system for a smooth user experience.
+    
+    \smallskip 
+    \coloredbullet\ %
+    Integrated Firebase for authentication, data storage, and real-time updates, leveraging Angular services and dependency injection for scalability. Implemented form handling, validations, and all types of data binding to enhance interactivity and usability.
+      
+    \smallskip
+    \coloredbullet\ %
+    Optimized the application with Block UI and structured reusable components for maintainability. Currently refining Firebase integration and expanding features to improve performance and user engagement.
+    
+    \smallskip
+    }
+
+    \datedexperience{\href{https://github.com/pipki11/tech-web}{Tech-Web}}{February 2024}
+    \explanation{E-commerce Platform for Apple Products}{Tbilisi, Georgia}
+    \explanationdetail{
+    \smallskip 
+    \coloredbullet\ %
+    Built a beginner-friendly e-commerce platform using Angular, focusing on fundamental concepts such as NgModules, components, and services.
+    
+    \smallskip
+    \coloredbullet\ %
+    Implemented a dynamic product catalog showcasing 10 Apple products, with filtering options for categories like iPhones and iPads for an intuitive shopping experience.
+    
+    \smallskip
+    \coloredbullet\ %
+    Developed a fully functional cart feature, enabling users to add and remove products seamlessly while maintaining state across the application.
+    
+    \smallskip
+    }
+
+    \datedexperience{\href{https://github.com/pipki11/TicTacToe}{Tic-Tac-Toe}}{June 2024}
+    \explanation{Interactive Browser Game}{Tbilisi, Georgia}
+    \explanationdetail{
+    \smallskip
+     \coloredbullet\ %
+ Players take turns placing their markers X or O in 3 to 3 grid, with real time updates and automatic
+    
+    \smallskip 
+    \coloredbullet\ %
+ Implemented core game logic including seamless player turns, real-time UI updates, and automatic winner detection with reset functionality.
+      
+     \smallskip
+     \coloredbullet\ %
+Showcased key Angular concepts such as component design and data binding for an engaging and educational user experience.
+     
+     \smallskip
+     }
+
+    
+
+\vspace{1.5ex}
+\section* {Languages}
+\begin{itemize}
+    \item \textbf{Georgian:} Native 
+    \item \textbf{English:} B2
+    \item \textbf{Russian:} Basic (A2)
+\end{itemize}
+
+
+\end{document}
+

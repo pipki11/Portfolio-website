@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zaal Esartia · Portfolio</title>
+    <meta
+      name="description"
+      content="Portfolio of Zaal Esartia – Frontend developer and Computer Science student showcasing projects, skills, and contact links."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkfNwpZ6Vx4uy1lSUsctNk6mNIG+L8z6I0a6YzJxQqzdM4Yx04ec5LQmA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Devicon for tech icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
+    />
+    <!-- Fallback icon CDNs in case primary fails -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/css/all.min.css"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/devicon@2.15.1/devicon.min.css"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%230a84ff'/%3E%3Ctext x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' font-size='28' font-family='Arial' fill='white'%3EZE%3C/text%3E%3C/svg%3E"
+    />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="nav-bar">
+        <nav class="nav container">
+          <a href="#" class="brand">Zaal <span>Esartia</span></a>
+          <button id="navToggle" class="nav-toggle" aria-label="Toggle menu">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+          <ul class="nav-links" id="navLinks">
+            <li>
+              <a href="#about"><i class="fa-solid fa-user"></i> About</a>
+            </li>
+            <li>
+              <a href="#experience"
+                ><i class="fa-solid fa-briefcase"></i> Experience</a
+              >
+            </li>
+            <li>
+              <a href="#education"
+                ><i class="fa-solid fa-graduation-cap"></i> Education</a
+              >
+            </li>
+            <li>
+              <a href="#projects"
+                ><i class="fa-solid fa-diagram-project"></i> Projects</a
+              >
+            </li>
+            <li>
+              <a href="#skills"
+                ><i class="fa-solid fa-laptop-code"></i> Skills</a
+              >
+            </li>
+            <li>
+              <a href="#hobbies"><i class="fa-solid fa-icons"></i> Hobbies</a>
+            </li>
+          </ul>
+          <div class="nav-actions">
+            <div class="nav-social">
+              <a
+                href="https://www.linkedin.com/in/zaal-esartia-056bb32b2/"
+                class="icon-btn"
+                target="_blank"
+                rel="noopener"
+                aria-label="LinkedIn"
+              >
+                <i class="fa-brands fa-linkedin"></i>
+              </a>
+              <a
+                href="https://github.com/pipki11"
+                class="icon-btn"
+                target="_blank"
+                rel="noopener"
+                aria-label="GitHub"
+              >
+                <i class="fa-brands fa-github"></i>
+              </a>
+            </div>
+            <button
+              id="themeToggle"
+              class="theme-toggle"
+              aria-label="Toggle theme"
+            >
+              <i class="fa-solid fa-moon"></i>
+            </button>
+          </div>
+        </nav>
+      </div>
+      <section class="hero container">
+        <div class="hero-content">
+          <h1>Frontend Developer</h1>
+          <p class="subtitle">
+            Computer Science student focused on frontend development with
+            Angular, TypeScript, and modern web technologies.
+          </p>
+          <div class="contact">
+            <a href="mailto:zaal.esartia@gmail.com" class="chip"
+              ><i class="fa-solid fa-envelope"></i> esartiazaali@gmail.com</a
+            >
+            <a href="tel:+995597798388" class="chip"
+              ><i class="fa-solid fa-mobile-screen-button"></i> (+995)
+              597-79-83-88</a
+            >
+            <a
+              href="https://www.linkedin.com/in/zaal-esartia-056bb32b2/"
+              target="_blank"
+              rel="noopener"
+              class="chip"
+              ><i class="fa-brands fa-linkedin"></i> LinkedIn</a
+            >
+            <a
+              href="https://github.com/pipki11"
+              target="_blank"
+              rel="noopener"
+              class="chip"
+              ><i class="fa-brands fa-github"></i> GitHub</a
+            >
+          </div>
+        </div>
+        <div class="hero-visual" aria-hidden="true">
+          <div class="orb orb-a"></div>
+          <div class="orb orb-b"></div>
+          <div class="orb orb-c"></div>
+        </div>
+      </section>
+    </header>
+
+    <main>
+      <section id="about" class="section container">
+        <h2><i class="fa-solid fa-circle-info"></i> Summary</h2>
+        <p>
+          BS Computer Science student at Ivane Javakhishvili Tbilisi State
+          University with a strong passion for frontend development. Practical
+          experience building Angular applications using TypeScript, RxJS, and
+          Tailwind CSS; proficient in C++ and modern web tooling. Built projects
+          such as ClipZ (video-sharing with Firebase), Tech-Web (e‑commerce) and
+          Tic‑Tac‑Toe; looking for an internship or entry-level frontend role to
+          apply problem-solving and software development skills.
+        </p>
+      </section>
+
+      <!-- <section id="experience" class="section container">
+        
+        <h2><i class="fa-solid fa-briefcase"></i> Experience</h2>
+        <div class="timeline">
+          <article class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <header class="item-header">
+                <h3>Software Developer <span class="at">@ Intermedia</span></h3>
+                <div class="meta">Remote, Georgia · Jan 2024 – Present</div>
+              </header>
+              <ul>
+                <li>
+                  I work with a small team in our company, focusing on a
+                  dedicated part of our large application where we handle the
+                  creation of quotes for end users, providing them with a range
+                  of equipment and service options. My role: back-end
+                  development, writing UI tests using Selenium/Playwright, and
+                  overseeing test builds and pipelines.
+                </li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <header class="item-header">
+                <h3>.NET Developer <span class="at">@ 63 Bits</span></h3>
+                <div class="meta">Tbilisi, Georgia · Oct 2022 – Jan 2024</div>
+              </header>
+              <ul>
+                <li>
+                  With a team of 2 developers, built a fully(almost) automated
+                  warehouse system for one of the German
+                  companies(NeoIntralogistics GmbH) powered by robots,
+                  minimizing the need for human interaction and reducing manual
+                  processing time by 70% through automation of warehouse
+                  workflows.
+                </li>
+                <li>
+                  Wrote several applications for one of the largest companies in
+                  Georgia: Vian (former Evex). One of the challenging tasks was
+                  to implement logic to match payments to invoices. (with
+                  millions of rows in the database)
+                </li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <header class="item-header">
+                <h3>
+                  .NET Developer <span class="at">@ Flatrock Technology</span>
+                </h3>
+                <div class="meta">Remote, Georgia · Oct 2021 – Oct 2022</div>
+              </header>
+              <ul>
+                <li>
+                  Projects: IT talent hiring platform. Role: back-end API
+                  development and "Evaluation Tool" - automation tool for hiring
+                  new employees. Role: full-stack developer. Technologies: .NET
+                  + React.
+                </li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <header class="item-header">
+                <h3>.NET Developer <span class="at">@ PayUnicard</span></h3>
+                <div class="meta">Tbilisi, Georgia · Aug 2020 – Oct 2021</div>
+              </header>
+              <ul>
+                <li>
+                  Building the online bank application, where my role was as a
+                  back-end developer focusing mainly on building API.
+                </li>
+                <li>
+                  Created several web applications for loyalty programs for
+                  different companies.
+                </li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <header class="item-header">
+                <h3>
+                  .NET Developer / Test Automation Engineer
+                  <span class="at">@ Webiz</span>
+                </h3>
+                <div class="meta">Tbilisi, Georgia · Aug 2019 – Aug 2020</div>
+              </header>
+              <ul>
+                <li>
+                  I began as a Test Automation Engineer with Selenium in C#,
+                  then moved into .NET backend development, working on an
+                  e-commerce application where I analyzed existing code and
+                  implemented new features.
+                </li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </section> -->
+      <section
+        id="experience"
+        class="section container"
+        style="
+          text-align: center;
+          margin: 60px auto;
+          font-family: Arial, sans-serif;
+        "
+      >
+        <h2 style="font-size: 32px; margin-bottom: 30px">
+          <i class="fa-solid fa-briefcase" style="margin-right: 8px"></i>
+          Experience
+        </h2>
+        <div
+          class="timeline"
+          style="display: flex; justify-content: center; align-items: center"
+        >
+          <article
+            class="timeline-item"
+            style="
+              max-width: 600px;
+              padding: 30px;
+              background: linear-gradient(135deg, #f9f9f9, #ffffff);
+              border-radius: 16px;
+              box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+              transition: all 0.3s ease;
+              cursor: default;
+            "
+          >
+            <div class="timeline-content">
+              <header class="item-header">
+                <h3 style="font-size: 24px; color: #222; margin-bottom: 10px">
+                  🚀 No Professional Work Experience Yet
+                </h3>
+              </header>
+              <p
+                style="
+                  font-size: 17px;
+                  color: #555;
+                  line-height: 1.6;
+                  margin: 0;
+                "
+              >
+                I am eager to start my career, learn from real-world projects,
+                and contribute my skills to innovative teams and meaningful
+                work.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="education" class="section container">
+        <h2><i class="fa-solid fa-graduation-cap"></i> Education</h2>
+        <ul class="edu-list">
+          <li>
+            <i class="fa-solid fa-certificate"></i> Angular - The Complete Guide
+            (2025 Edition)
+          </li>
+          <li>
+            <i class="fa-solid fa-certificate"></i> The Complete JavaScript
+            Course 2025: From Zero to Expert!
+          </li>
+          <li>
+            <i class="fa-solid fa-certificate"></i> The Complete 2025 Software
+            Testing Bootcamp
+          </li>
+          <li>
+            <i class="fa-solid fa-user-graduate"></i> Bachelors, Computer
+            Science – Ivane Javakhishvili Tbilisi State University Tbilisi,
+            Georgia 2022 - 2026
+          </li>
+          <li>
+            <i class="fa-solid fa-school"></i> 35 Public School of Tbilisi
+          </li>
+        </ul>
+      </section>
+
+      <section id="projects" class="section container">
+        <h2><i class="fa-solid fa-diagram-project"></i> Projects</h2>
+        <div class="grid projects-grid">
+          <!-- <article class="card project">
+            <div class="card-body">
+              <h3>Comfort Room</h3>
+              <p>
+                I build everything from scratch and currently implementing new
+                features.
+              </p>
+              <div class="tags">
+                <span class="tag"
+                  ><i class="devicon-dot-net-plain"></i> .NET</span
+                >
+                <span class="tag"
+                  ><i class="devicon-react-original"></i> React</span
+                >
+                <span class="tag"
+                  ><i class="devicon-microsoftsqlserver-plain"></i> MS SQL</span
+                >
+              </div>
+            </div>
+            <div class="card-footer">
+              <a
+                href="https://comfortroom.ge"
+                target="_blank"
+                rel="noopener"
+                class="btn"
+              >
+                <i class="fa-solid fa-arrow-up-right-from-square"></i> Visit
+                site
+              </a>
+            </div>
+          </article>
+
+          <article class="card project">
+            <div class="card-body">
+              <h3>Microservices Test Project</h3>
+              <p>
+                Used Technologies: .NET 5, EF Core, Dapper, MS SQL, MongoDB,
+                Postgres, Redis, RabbitMQ, gRPC, Docker...
+              </p>
+              <div class="tags">
+                <span class="tag"
+                  ><i class="devicon-dot-net-plain"></i> .NET 5</span
+                >
+                <span class="tag"
+                  ><i class="devicon-docker-plain"></i> Docker</span
+                >
+                <span class="tag"
+                  ><i class="devicon-redis-plain"></i> Redis</span
+                >
+                <span class="tag"
+                  ><i class="devicon-mongodb-plain"></i> MongoDB</span
+                >
+                <span class="tag"
+                  ><i class="devicon-postgresql-plain"></i> PostgreSQL</span
+                >
+                <span class="tag"
+                  ><i class="devicon-rabbitmq-original"></i> RabbitMQ</span
+                >
+              </div>
+            </div>
+            <div class="card-footer">
+              <a
+                href="https://github.com/Vazhadval/MicroservicesProject"
+                target="_blank"
+                rel="noopener"
+                class="btn"
+              >
+                <i class="fa-brands fa-github"></i> Repository
+              </a>
+            </div>
+          </article>
+
+          <article class="card project">
+            <div class="card-body">
+              <h3>Book Store</h3>
+              <p>
+                My first "Big" .NET Core application with full e-commerce
+                functionality (user, product, payment management).
+              </p>
+              <div class="tags">
+                <span class="tag"
+                  ><i class="devicon-dot-net-plain"></i> .NET Core</span
+                >
+                <span class="tag"
+                  ><i class="devicon-microsoftsqlserver-plain"></i> MS SQL</span
+                >
+              </div>
+            </div>
+            <div class="card-footer">
+              <a
+                href="https://www.github.com/Vazhadval/BookStore"
+                target="_blank"
+                rel="noopener"
+                class="btn"
+              >
+                <i class="fa-brands fa-github"></i> Repository
+              </a>
+            </div>
+          </article> -->
+
+          <!-- CV Projects: ClipZ, Tech-Web, Tic-Tac-Toe -->
+          <article class="card project">
+            <div class="card-body">
+              <h3>ClipZ</h3>
+              <p>
+                Video-sharing platform for gamers built with Angular. Responsive
+                UI with Tailwind CSS, reusable components, and a modal system
+                for smooth UX.
+              </p>
+              <div class="tags">
+                <span class="tag"
+                  ><i class="devicon-angularjs-plain"></i> Angular</span
+                >
+                <span class="tag"
+                  ><i class="devicon-tailwindcss-plain colored"></i> Tailwind
+                  CSS</span
+                >
+                <span class="tag"
+                  ><i class="fa-solid fa-database"></i> Firebase</span
+                >
+              </div>
+            </div>
+            <div class="card-footer">
+              <a
+                href="https://github.com/pipki11/ClipZ-Project"
+                target="_blank"
+                rel="noopener"
+                class="btn"
+              >
+                <i class="fa-brands fa-github"></i> Repository
+              </a>
+            </div>
+          </article>
+
+          <article class="card project">
+            <div class="card-body">
+              <h3>Tech-Web</h3>
+              <p>
+                Beginner-friendly e-commerce platform built with Angular.
+                Features a dynamic product catalog, filtering, and a functional
+                cart system.
+              </p>
+              <div class="tags">
+                <span class="tag"
+                  ><i class="devicon-angularjs-plain"></i> Angular</span
+                >
+                <span class="tag"
+                  ><i class="devicon-bootstrap-plain colored"></i>
+                  Bootstrap</span
+                >
+                <span class="tag"
+                  ><i class="devicon-javascript-plain colored"></i>
+                  JavaScript</span
+                >
+              </div>
+            </div>
+            <div class="card-footer">
+              <a
+                href="https://github.com/pipki11/tech-web"
+                target="_blank"
+                rel="noopener"
+                class="btn"
+              >
+                <i class="fa-brands fa-github"></i> Repository
+              </a>
+            </div>
+          </article>
+
+          <article class="card project">
+            <div class="card-body">
+              <h3>Tic-Tac-Toe</h3>
+              <p>
+                Interactive browser game implemented with Angular demonstrating
+                component design, data binding, and game logic with automatic
+                winner detection and reset.
+              </p>
+              <div class="tags">
+                <span class="tag"
+                  ><i class="devicon-angularjs-plain"></i> Angular</span
+                >
+                <span class="tag"
+                  ><i class="devicon-typescript-plain colored"></i>
+                  TypeScript</span
+                >
+                <span class="tag"
+                  ><i class="fa-solid fa-gamepad"></i> Game</span
+                >
+              </div>
+            </div>
+            <div class="card-footer">
+              <a
+                href="https://github.com/pipki11/TicTacToe"
+                target="_blank"
+                rel="noopener"
+                class="btn"
+              >
+                <i class="fa-brands fa-github"></i> Repository
+              </a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="skills" class="section container">
+        <h2><i class="fa-solid fa-laptop-code"></i> Skills</h2>
+        <div class="skills">
+          <div class="skill-block">
+            <h3><i class="fa-solid fa-user-check"></i> Personal</h3>
+            <ul class="pill-list">
+              <li>Logic</li>
+              <li>Research</li>
+              <li>Team player</li>
+              <li>communication/explanation</li>
+              <li>ability to use AI tools effectively</li>
+            </ul>
+          </div>
+
+          <div class="skill-block">
+            <h3><i class="fa-solid fa-language"></i> Languages</h3>
+            <ul class="pill-list">
+              <li>English(B2)</li>
+              <li>Georgian (native)</li>
+              <li>Russian (A2)</li>
+            </ul>
+          </div>
+
+          <div class="skill-block">
+            <h3><i class="fa-solid fa-code"></i> Frontend</h3>
+            <ul class="icon-list">
+              <li><i class="devicon-html5-plain colored"></i> HTML5</li>
+              <li><i class="devicon-css3-plain colored"></i> CSS3</li>
+              <li>
+                <i class="devicon-javascript-plain colored"></i> JavaScript
+              </li>
+              <li>
+                <i class="devicon-typescript-plain colored"></i> TypeScript
+              </li>
+              <li><i class="devicon-angularjs-plain colored"></i> Angular</li>
+              <li><i class="fa-solid fa-retweet"></i> RxJS</li>
+            </ul>
+          </div>
+
+          <div class="skill-block">
+            <h3><i class="fa-solid fa-paint-roller"></i> UI/UX</h3>
+            <ul class="icon-list">
+              <li><i class="devicon-sass-original colored"></i> Sass</li>
+              <li><i class="devicon-bootstrap-plain colored"></i> Bootstrap</li>
+              <li>
+                <i class="devicon-tailwindcss-plain colored"></i> Tailwind CSS
+              </li>
+            </ul>
+          </div>
+
+          <div class="skill-block">
+            <h3><i class="fa-solid fa-wrench"></i> Programming</h3>
+            <ul class="icon-list">
+              <li><i class="devicon-cplusplus-plain colored"></i> C++</li>
+              <li><i class="fa-solid fa-sitemap"></i> System Architecture</li>
+              <li><i class="fa-solid fa-certificate"></i> CompTIA A+</li>
+            </ul>
+          </div>
+
+          <div class="skill-block">
+            <h3><i class="fa-brands fa-git-alt"></i> Tools</h3>
+            <ul class="icon-list">
+              <li><i class="devicon-git-plain colored"></i> Git</li>
+              <li><i class="devicon-vscode-plain colored"></i> VS Code</li>
+              <li><i class="devicon-npm-original-wordmark colored"></i> npm</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="hobbies" class="section container">
+        <h2><i class="fa-solid fa-icons"></i> Hobbies</h2>
+        <ul class="hobby-list">
+          <li><i class="fa-solid fa-music"></i> Music</li>
+          <li><i class="fa-solid fa-chess-knight"></i> Chess</li>
+          <li><i class="fa-solid fa-futbol"></i> Football</li>
+          <li><i class="fa-solid fa-code"></i> Algorithms</li>
+          <li><i class="fa-solid fa-gamepad"></i> Videogames</li>
+          <li>
+            <i class="fa-brands fa-youtube"></i> Posting educational videos on
+            YouTube
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-content">
+        <p>© <span id="year"></span> Vazha Dvalishvili. All rights reserved.</p>
+        <div class="socials">
+          <a href="mailto:vazhadvalishvili@gmail.com" aria-label="Email"
+            ><i class="fa-solid fa-envelope"></i
+          ></a>
+          <a href="tel:+995551001678" aria-label="Phone"
+            ><i class="fa-solid fa-mobile-screen-button"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/vazha-dvalishvili/"
+            target="_blank"
+            rel="noopener"
+            aria-label="LinkedIn"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+          <a
+            href="https://github.com/Vazhadval"
+            target="_blank"
+            rel="noopener"
+            aria-label="GitHub"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
